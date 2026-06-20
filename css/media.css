@@ -1,0 +1,289 @@
+/* ____________ HEADER MOBILE ________________ */
+
+
+@media (max-width: 1024px) {
+    .header {
+        height: 80px;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .header__button {
+        padding: 14px 34px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
+
+/* ________ HERO MOBILE  ________ */
+
+@media (max-width: 1024px) {
+    .page__content {
+        gap: 2rem;
+    }
+
+    .text__section {
+        max-width: 100%;
+    }
+
+    .title__img {
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 0px 5px;
+    }
+
+    .page__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text__section {
+        align-items: center;
+        order: 1;
+    }
+
+    .title__img {
+        order: 2;
+        max-width: 280px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .button__section {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .limited__text {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .paragraf__section {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .title__img {
+        max-width: 220px;
+        width: 60%;
+    }
+
+    .section__btn {
+        font-size: 17px;
+        padding: 18px 32px;
+    }
+
+    .button__section {
+        gap: 16px;
+    }
+}
+
+/* _____________________ STIKY ____________________ */
+
+@media (max-width: 768px) {
+    .discount__banner {
+        top: unset;
+        bottom: 0;
+        transform: translateY(100%);
+    }
+
+    .discount__banner.show {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 580px) {
+    .banner__text {
+        font-weight: 400;
+    }
+
+    .none__text {
+        display: none;
+    }
+}
+
+
+
+/* _________________________ACCORDEON____________________________ */
+
+@media (max-width: 768px) {
+    .accordeon__section {
+        padding: 0 5px 28px 5px;
+    }
+
+    .accordion-container {
+        padding: 1.5rem;
+    }
+
+    .accordion-item button {
+        font-size: 1rem;
+        padding: 0.85em 0;
+    }
+
+    .accordion-title {
+        padding: 0.85em 2em 0.85em 0;
+    }
+
+    .accordion-content p {
+        font-size: 0.95rem;
+        margin: 1.5em 0;
+    }
+
+    .icon {
+        top: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .accordion-container {
+        padding: 1rem;
+
+    }
+
+
+
+    .accordion-item button {
+        font-size: 0.95rem;
+        padding: 0.75em 0;
+    }
+
+    .accordion-title {
+        padding: 0.75em 2em 0.75em 0;
+        padding-right: 2.5rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .accordion-item button {
+        font-size: 0.9rem;
+        align-items: flex-start;
+    }
+
+    .icon {
+        top: 12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon::before {
+        top: 8px;
+        left: 4px;
+        width: 9px;
+    }
+
+    .icon::after {
+        top: 4px;
+        left: 8px;
+        height: 9px;
+    }
+
+    .accordion-content p {
+        font-size: 0.9rem;
+        margin: 1em 0;
+    }
+}
+
+/* ______________________________ABOUT US_______________________________ */
+
+@media (max-width: 1024px) {
+    .about__content {
+        gap: 2rem;
+    }
+
+    .about__content>img {
+        max-width: 45%;
+    }
+
+    .about__grup {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__content>img {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .about__grup {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .grup__content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .grup__img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .grup__title {
+        font-size: 0.95rem;
+    }
+
+    .grup__paragraf {
+        font-size: 0.85rem;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__content>img {
+        max-width: 85%;
+    }
+
+    .about__grup {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .grup__content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .grup__img {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+    }
+
+    .about__header-title {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+
+    .grup__title {
+        padding-bottom: 5px;
+    }
+}

@@ -1,0 +1,33 @@
+.title__section,
+.paragraf__section,
+.button__section,
+.title__img {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.title__img {
+    transform: translateX(40px);
+}
+
+.animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.title__section {
+    transition-delay: 0.1s;
+}
+
+.paragraf__section {
+    transition-delay: 0.3s;
+}
+
+.button__section {
+    transition-delay: 0.5s;
+}
+
+.title__img {
+    transition-delay: 0.2s;
+}

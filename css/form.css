@@ -1,0 +1,316 @@
+.lf-section {
+    padding: clamp(2rem, 6vw, 5rem) 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.lf-wrap {
+    width: 100%;
+    max-width: 440px;
+}
+
+/* Header */
+.lf-header {
+    margin-bottom: 2rem;
+}
+
+.lf-title {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+.lf-title span {
+    color: #00C4F4;
+}
+
+.lf-sub {
+    font-size: 0.85rem;
+    color: #8a9ab0;
+    margin-bottom: 0.6rem;
+}
+
+.lf-progress {
+    height: 3px;
+    background: #1a2a3a;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.lf-progress__bar {
+    height: 100%;
+    width: 50%;
+    background: #00C4F4;
+    border-radius: 99px;
+    transition: width 0.4s ease;
+}
+
+
+.lf-panel {
+    display: none;
+}
+
+.lf-panel.active {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lf-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.lf-field input[type="text"],
+.lf-field input[type="email"],
+.lf-field input[type="tel"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid #1a2a3a;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.lf-field input::placeholder {
+    color: #445566;
+}
+
+.lf-field input:focus {
+    border-bottom-color: #00C4F4;
+}
+
+.lf-field input.lf-err {
+    border-bottom-color: #ff4d4d;
+}
+
+
+.lf-phone-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.lf-phone-row select {
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid #1a2a3a;
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    flex-shrink: 0;
+    transition: border-color 0.2s;
+}
+
+.lf-phone-row select:focus {
+    border-bottom-color: #00C4F4;
+}
+
+.lf-phone-row select.lf-err {
+    border-bottom-color: #ff4d4d;
+}
+
+.lf-phone-row input {
+    flex: 1;
+}
+
+
+.lf-error {
+    display: none;
+    font-size: 0.75rem;
+    color: #ff4d4d;
+    margin-top: 0.3rem;
+}
+
+.lf-error.show {
+    display: block;
+}
+
+
+.lf-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 0.25rem;
+}
+
+.lf-check input[type="checkbox"] {
+    display: none;
+}
+
+.lf-check__box {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    border: 1.5px solid #1a2a3a;
+    border-radius: 4px;
+    background: transparent;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.lf-check input:checked+.lf-check__box {
+    background: #00C4F4;
+    border-color: #00C4F4;
+}
+
+.lf-check input:checked+.lf-check__box::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 6px;
+    border-left: 2px solid #030B15;
+    border-bottom: 2px solid #030B15;
+    transform: rotate(-45deg) translateY(-1px);
+}
+
+.lf-check__text {
+    font-size: 0.85rem;
+    color: #8a9ab0;
+    line-height: 1.5;
+}
+
+.lf-check__text a {
+    color: #00C4F4;
+    text-decoration: underline;
+}
+
+
+.lf-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: #00C4F4;
+    color: #030B15;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+.lf-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+.lf-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.lf-actions .lf-btn {
+    margin-top: 0;
+}
+
+.lf-btn-back {
+    padding: 0.9rem 1.25rem;
+    background: transparent;
+    color: #8a9ab0;
+    border: 1.5px solid #1a2a3a;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.lf-btn-back:hover {
+    color: #fff;
+    border-color: #00C4F4;
+}
+
+
+.lf-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(3, 11, 21, 0.88);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.lf-modal-overlay.open {
+    display: flex;
+}
+
+.lf-modal {
+    background: #071525;
+    border-top: 3px solid #00C4F4;
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    animation: lfPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@keyframes lfPop {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.lf-modal__check {
+    font-size: 2rem;
+    color: #00C4F4;
+    margin-bottom: 0.25rem;
+}
+
+.lf-modal h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.lf-modal p {
+    font-size: 0.9rem;
+    color: #8a9ab0;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 480px) {
+    .lf-wrap {
+        max-width: 100%;
+    }
+
+    .lf-actions {
+        flex-direction: column;
+    }
+
+    .lf-modal {
+        padding: 2rem 1.25rem;
+    }
+
+    .lf-phone-row select {
+        width: 80px;
+        font-size: 0.8rem;
+    }
+}

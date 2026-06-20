@@ -1,0 +1,24 @@
+.swiper {
+    width: 100%;
+}
+
+.swiper__img {
+    width: 100%;
+    aspect-ratio: 200 / 420;
+    object-fit: cover;
+}
+
+:root {
+    --swiper-navigation-size: 30px;
+}
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    --swiper-pagination-bottom: 60px
+}
+
+.swiper-pagination-bullet {
+    background: var(--swiper-pagination-bullet-inactive-color, #00C4F4);
+}
