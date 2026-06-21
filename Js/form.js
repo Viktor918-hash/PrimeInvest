@@ -19,8 +19,8 @@ function showErr(id, errId, show) {
 
 
 document.getElementById('lf-next').addEventListener('click', () => {
-  const name    = document.getElementById('lf-name').value.trim();
-  const email   = document.getElementById('lf-email').value.trim();
+  const name = document.getElementById('lf-name').value.trim();
+  const email = document.getElementById('lf-email').value.trim();
   const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   showErr('lf-name',  'lf-name-error',  !name);
   showErr('lf-email', 'lf-email-error', !emailOk);
@@ -44,7 +44,7 @@ phoneEl.addEventListener('input', () => {
 
 
 document.getElementById('lf-submit').addEventListener('click', () => {
-  const phone   = phoneEl.value.replace(/\D/g, '');
+  const phone = phoneEl.value.replace(/\D/g, '');
   const consent = document.getElementById('lf-consent').checked;
   const phoneOk = phone.length >= 9;
   showErr('lf-phone', 'lf-phone-error', !phoneOk);

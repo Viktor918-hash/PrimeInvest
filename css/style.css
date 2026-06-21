@@ -49,8 +49,6 @@ body {
 }
 
 
-.header__navigation {}
-
 .header__nav {
     display: flex;
     justify-content: space-between;
@@ -94,11 +92,10 @@ body {
 .header__button {
     color: #FFFFFF;
     background-color: #00C4F4;
-    padding: 16px 34px;
+    padding: 16px 24px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    text-transform: capitalize;
     transition: transform 0.3s ease;
 }
 
@@ -112,10 +109,9 @@ MAIN MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAI
 
 .main {
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
-
-.container {}
 
 .page--section {
     display: flex;
@@ -150,7 +146,10 @@ MAIN MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAI
     font-size: clamp(1rem, 0.925rem + 0.38vw, 1.375rem);
     line-height: 1.4;
     padding-bottom: 35px;
+    text-align: left;
 }
+
+
 
 .title__img {
     max-width: 480px;
@@ -284,6 +283,7 @@ SLYDER SLYDER SLYDER SLYDER SLYDER SLYDER */
 
 .footer {
     margin-top: clamp(1.875rem, 0.602rem + 6.36vw, 6.25rem);
+    padding-bottom: 50px
 }
 
 
@@ -299,8 +299,6 @@ SLYDER SLYDER SLYDER SLYDER SLYDER SLYDER */
     justify-content: center;
     gap: 20px;
 }
-
-.logo__img {}
 
 .footer__title {
     text-transform: capitalize;

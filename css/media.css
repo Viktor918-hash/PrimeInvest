@@ -11,7 +11,7 @@
     }
 
     .header__button {
-        padding: 14px 34px;
+        padding: 14px 24px;
         font-size: 14px;
     }
 }
@@ -20,6 +20,18 @@
     .header__button {
         padding: 10px 18px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 630px) {
+    .header__button {
+        padding: 8px 12px;
+        font-size: 10px;
+        text-transform: capitalize;
+    }
+
+    .text__none {
+        display: none;
     }
 }
 
@@ -36,6 +48,23 @@
 
     .title__img {
         max-width: 380px;
+    }
+
+    .container {
+        padding: 0px 25px
+    }
+
+    .section__btn {
+        padding: 16px 24px;
+    }
+
+    ;
+}
+
+@media (max-width: 802px) {
+    .section__btn {
+        padding: 16px 22px;
+        font-size: 17px;
     }
 }
 
@@ -69,15 +98,20 @@
         gap: 24px;
     }
 
+    .section__btn {
+        padding: 16px 22px;
+    }
+}
+
+@media (max-width: 600px) {
     .limited__text {
         align-items: center;
         margin: 0 auto;
     }
-
-    .paragraf__section {
-        text-align: left;
-    }
 }
+
+
+
 
 @media (max-width: 480px) {
 
@@ -88,7 +122,7 @@
 
     .section__btn {
         font-size: 17px;
-        padding: 18px 32px;
+        padding: 16px 24px;
     }
 
     .button__section {
@@ -105,11 +139,15 @@
         transform: translateY(100%);
         padding-bottom: env(safe-area-inset-bottom);
         height: auto;
-        min-height: 40px;
+        min-height: 44px;
     }
 
     .discount__banner.show {
         transform: translateY(0);
+    }
+
+    .banner__btn {
+        padding: 6px 10px;
     }
 }
 
@@ -288,5 +326,20 @@
 
     .grup__title {
         padding-bottom: 5px;
+    }
+}
+
+
+/* __________________________LOG IN_________________________________
+LOG IN LOG IN LOG IN LOG IN LOG IN LOG IN LOG IN LOG IN LOG IN LOG IN LOG IN LOG IN */
+
+@media (max-width: 480px) {
+    .modal__row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .modal {
+        padding: 1.5rem 1.25rem;
     }
 }
