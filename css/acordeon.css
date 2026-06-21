@@ -60,6 +60,8 @@
 
 .accordion-title {
     padding: 1em 1.5em 1em 0;
+    display: block;
+
 }
 
 .icon {

@@ -202,9 +202,10 @@ MAIN MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAIN  MAI
 _______________________________________________________________________________________________________
 SLYDER SLYDER SLYDER SLYDER SLYDER SLYDER */
 
-.section__slaider {
-    margin-top: clamp(1.875rem, 0.861rem + 5.07vw, 6.25rem);
-    margin-bottom: clamp(1.875rem, 0.982rem + 4.46vw, 5rem)
+
+.slaider__content {
+    margin-top: clamp(1.875rem, 0.148rem + 8.64vw, 7.813rem);
+    margin-bottom: clamp(1.875rem, 0.982rem + 4.46vw, 5rem);
 }
 
 .slaider__title {
