@@ -284,13 +284,15 @@ SLYDER SLYDER SLYDER SLYDER SLYDER SLYDER */
 
 .footer {
     margin-top: clamp(1.875rem, 0.602rem + 6.36vw, 6.25rem);
-    padding-bottom: 50px
+    padding-bottom: 10px
 }
 
 
 .footer__container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 
@@ -326,4 +328,40 @@ SLYDER SLYDER SLYDER SLYDER SLYDER SLYDER */
     background-color: #00C4F4;
     border: 2px solid #00C4F4;
     color: #fff;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(1.25rem, 0.705rem + 2.73vw, 3.125rem);
+    max-width: 500px;
+    width: 100%;
+}
+
+.footer__about {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title__about {
+    font-weight: 500;
+    font-size: clamp(1rem, 0.909rem + 0.45vw, 1.313rem);
+    color: #00C4F4;
+    margin-bottom: clamp(1rem, .636rem + 1.82vw, 2rem);
+}
+
+.lists__about {
+    font-size: clamp(0.875rem, 0.82rem + 0.27vw, 1.063rem);
+
+}
+
+.list__about {
+    margin-top: 12px;
+}
+
+
+.list__about:hover {
+    color: #00C4F4;
+    transition: 0.3s ease;
 }
