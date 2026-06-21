@@ -126,6 +126,11 @@
     color: #ffffff;
 }
 
+option {
+    background-color: #030B15;
+    color: #ffffff;
+}
+
 .lf-error {
     display: none;
     font-size: 0.75rem;
