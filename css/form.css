@@ -121,6 +121,10 @@
     flex: 1;
 }
 
+.lf-code {
+    background-color: #030B15;
+    color: #ffffff;
+}
 
 .lf-error {
     display: none;
